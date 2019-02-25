@@ -1,0 +1,114 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Sarabun', sans-serif;
+    margin:0;
+    
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:16px;
+}
+header .balance span{
+    display:block;
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #A6AAB4;
+}
+header .balance label{
+    font-weight: 600;
+    line-height: 42px;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    color: #171D33;
+}
+header .avatar{
+    position:relative;
+}
+header .avatar img{
+    border-radius:100%;
+}
+header .avatar .online-indicator{
+    position:absolute;
+    right:0;
+    top:0;
+    border-radius:100%;
+    background: #54D3AD;
+    border: 2px solid #FFFFFF;
+    height:8px;
+    width:8px;
+}
+.visa-slider{
+    margin:15px 0;
+}
+.visa-slider .list{
+    overflow: hidden;
+    display:flex;
+    flex-wrap:nowrap;
+    padding-bottom: 30px;
+}
+.visa-slider .item{
+    flex: 1 0 280px;
+    padding:16px;
+    height: 174px;
+    background: linear-gradient(121.05deg, #8676FB 0%, #AB7BFF 100%);
+    border-radius: 6px;
+}
+.visa-slider .item:nth-child(2){
+    box-shadow: 0px 8px 28px rgba(134, 118, 251, 0.6);
+}
+.visa-slider .item:first-child,
+.visa-slider .item:last-child{
+    transform: scale(0.7);
+    opacity: 0.5;
+}
+.visa-slider .item:first-child{
+    margin-left: -60%;
+    margin-right: -25px;
+    background: linear-gradient(120.97deg, #54D3AD 0%, #63E2BC 100%)
+}
+.visa-slider .item:last-child{
+    margin-left:-25px;
+    background: linear-gradient(120.97deg, #F09D5A 0%, #FFAD6A 100%);
+}
+.cc-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cc-number{
+    display:flex;
+    align-items: center;
+    margin:10px 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+}
+.cc-number span{
+    flex:1 0 25%;
+}
+.cc-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cc-info label{
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+.cc-info span{
+    display:block;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color:#fff;
+    opacity:0.8;
+}
